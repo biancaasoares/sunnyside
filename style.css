@@ -168,40 +168,102 @@ header .arrow-down{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 36px;
     height: 400px;
+    text-align: center;
 }
-
 .client__avatar{
-    background-color: #fff;
-    width: 72px;
-    height: 72px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
+    background-position: center;
     background-size: cover;
 }
-
-.client__avatar .client{
+.client__avatar.client1{
     background-image: url(./images/image-emily.jpg);
-
 }
-
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
 .client__text{
     font-size: 1.2rem;
     font-weight: 600;
+    opacity: 0.7;
     line-height: 2rem;
-    opacity: .6;
     padding: 0px 16px;
+    color: black;
 }
 
 .client__name{
-    font-family: var(--tittle-font);
-    font-size: 1.2rem;
-    font-weight: 900;
+    font-family: var(--tille-font);
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .client__job{
     color: var(--gray);
     font-weight: 600;
-    padding-top: 12px;
-    font-size: 1rem;
+    padding: 16px;
+}
+
+.images{
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "i1 i2"
+    "i3 i4";
+}
+
+.image1{
+    grid-area: i1;
+    background-size: cover;
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+}
+.image2{
+    grid-area: i2;
+    background-size: cover;
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+}
+.image3{
+    grid-area: i3;
+    background-size: cover;
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+}
+.image4{
+    grid-area: i4;
+    background-size: cover;
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+
+footer{
+    height: 350px;
+    background-color: #90D4C5;
+    justify-content: space-between;
+    font-family: var(--text-font);
+    color: #2C7566;
+}
+h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.3rem;
+    padding-top: 42px;
+}
+.nav__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 34px;
+}
+
+.icone__social{
+    padding-top: 42px;
+    padding-left: 7.2rem;
+    display: flex;
+    gap: 1.2rem;
+    
 }
